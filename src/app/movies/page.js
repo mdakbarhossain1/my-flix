@@ -1,4 +1,4 @@
-'use client'
+
 import MovieCard from '../components/MovieCard';
 import styles from '@/app/styles/common.module.css';
 
@@ -18,7 +18,7 @@ const movies = async () => {
     const res = await fetch(url, options);
     const data = await res.json();
     const mainData = data.titles;
-    console.log(data);
+    // console.log(data);
 
 
 

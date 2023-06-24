@@ -6,7 +6,7 @@ import './movieDetails.css';
 const DynamicRoute = async ({ params }) => {
 
     const id = params.id
-    const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}&lang=en`;
+    const url = `https://netflix-data.p.rapidapi.com/title/details/?ids=${id}&lang=en`;
     const options = {
         method: 'GET',
         headers: {
@@ -21,7 +21,7 @@ const DynamicRoute = async ({ params }) => {
     const genres = main_data.genres;
     const cast = main_data.cast;
 
-    console.log(data);
+    // console.log(data);
 
 
     return (

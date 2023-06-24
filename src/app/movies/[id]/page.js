@@ -18,7 +18,7 @@ const DynamicRoute = async ({ params }) => {
     const res = await fetch(url, options);
     const data = await res.json();
     const main_data = data[0].details;
-    const genres = main_data?.genres;
+    const genres = main_data.genres;
     const cast = main_data.cast;
 
     console.log(data);

@@ -1,0 +1,29 @@
+.text {
+    padding: 8rem;
+    text-align: center;
+}
+
+.text h3 {
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+.kid_text {
+    text-align: left;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kid_text h3 {
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+.hero_image {
+    position: relative;
+    max-width: 640px;
+    max-height: 480px;
+}

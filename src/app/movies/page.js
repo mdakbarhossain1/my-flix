@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import React from 'react';
+
 import MovieCard from '../components/MovieCard';
 import styles from '@/app/styles/common.module.css';
 
@@ -19,7 +18,7 @@ const movies = async () => {
     const res = await fetch(url, options);
     const data = await res.json();
     const mainData = data.titles;
-    console.log(mainData);
+    // console.log(mainData);
 
 
 
@@ -27,7 +26,7 @@ const movies = async () => {
         <>
             <section className={styles.movieSection}>
                 <div className={styles.container}>
-                    <h1>Movies & Drema</h1>
+                    <h1>Movies & Drama</h1>
                     <div className={styles.card_section}>
                         {
                             mainData.map((curElem) => {

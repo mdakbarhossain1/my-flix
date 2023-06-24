@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 const MovieCard = (curElem) => {
 
-    const {id, type, title, synopsis} = curElem.jawSummary;
-    console.log(curElem);
+    const {id, title, synopsis} = curElem.jawSummary;
+    // console.log(curElem);
     return (
         <>
            <div className={styles.card}>

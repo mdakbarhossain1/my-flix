@@ -11,7 +11,7 @@ const DynamicRoute = async ({ params }) => {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '02586c9b78msh404c2aa068bbbdap175112jsn3b1e6489d9fb',
-            'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
+            'X-RapidAPI-Host': 'netflix-data.p.rapidapi.com'
         }
     };
 

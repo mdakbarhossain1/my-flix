@@ -1,24 +1,24 @@
-
+'use client'
 import MovieCard from '../components/MovieCard';
 import styles from '@/app/styles/common.module.css';
 
 const movies = async () => {
 
-    await new Promise(resolve => setTimeout(resolve,2000))
+    await new Promise(resolve => setTimeout(resolve,1000))
 
     const url = process.env.RAPID_KEY;
     const options = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '02586c9b78msh404c2aa068bbbdap175112jsn3b1e6489d9fb',
-            'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
+            'X-RapidAPI-Host': 'netflix-data.p.rapidapi.com'
         }
     };
 
     const res = await fetch(url, options);
     const data = await res.json();
     const mainData = data.titles;
-    // console.log(mainData);
+    console.log(data);
 
 
 
